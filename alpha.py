@@ -34,7 +34,7 @@ class Password:
         return encrypted
 
 
-password_length = int(input(f'Enter password length: '))
+password_length = int(input(f'Enter password length(minimun 8) : '))
 if password_length >= 8:
     obj = Password(password_length)
     hash_value = obj.encryption()
